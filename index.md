@@ -2,6 +2,8 @@
 
 ## From a webmention implementation 
 
+*(Assumes familiarity with the Webmention spec)*
+
 Could be considered an extension to the webmention spec. Ie. if you have implemented sending and receiving webmentions, and want to also send them in a way that LDP servers will accept, and receive updates from applications which expect to be writing to LDP servers.
 
 ### Sending
@@ -51,6 +53,8 @@ or
 to: `source=<source>&target=<target>` and proceed with validation. Note that you may want to parse the `<source>` document as RDFa, Turtle or JSON-LD during verification to grab the contents of the source, though string-matching for the `<target>` URL will still work on all of these if you don't care about the semantics of the notification.
 
 ## From a LDP implementation
+
+*(Assumes familiarity with LDP and the Webmention spec)*
 
 Consider this an extension to the LDP spec. Ie. if you have an LDP server and want to modify it to receive and process webmentions correctly, or if you have Solid application and you want to use it to send webmentions.
 
